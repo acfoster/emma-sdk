@@ -119,7 +119,10 @@ You will need to generate your own API access tokens using the settings panel wi
   * [webhook.withID(id).update([params], callback)](#emmawebhookwithididupdateparams-callback)
   * [webhook.withID(id).delete(callback)](#emmawebhookwithididdeletecallback)
   * [webhook.deleteAll(callback)](#emmawebhookdeleteallcallback)
-
+* [Automation](#automation)
+  * [emma.automation.list(callback)](#emmaautomationlistcallback)
+  * [emma.automation.withID(id).details(callback)](#emmaautomationwithididdetailscallback)
+  * [emma.automation.getCounts(callback)](#emmaautomationgetcountscallback)
 
 ### Fields
 
@@ -875,6 +878,27 @@ Deletes an existing webhook.
 Delete all webhooks registered for an account.
 
 * returns: `True` if the webhooks deleted successfully.
+
+### Automation
+
+#### emma.automation.list(callback)
+
+Gets a list of this account’s automation workflows.
+
+* returns: A list of automation workflows in the given account.
+
+#### emma.automation.withID(id).details(callback)
+
+Gets detailed information about a single workflow.
+
+* returns: A single workflow if one exists
+* raises: Http404 if no workflow is found.
+
+#### emma.automation.getCounts(callback)
+
+Gets the counts of workflows for this account by workflow state.
+
+* returns: Counts for the workflow by state (`active`, `inactive` and `draft`).
 
 [Array]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array "Array"
 [Boolean]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Boolean_type "Boolean"
