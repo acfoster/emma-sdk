@@ -71,7 +71,7 @@ You will need to generate your own API access tokens using the settings panel wi
   * [member.addOne([params], callback)](#emmamemberaddoneparams-callback)
   * [member.signup([params], callback)](#emmamembersignupparams-callback)
   * [member.bulkDelete([params], callback)](#emmamembersbulkdeleteparams-callback)
-  * [member.bulkUpdatingStatus([params], callback)](#emmamemberbulkupdatingstatusparams-callback)
+  * [member.bulkUpdateStatus([params], callback)](#emmamemberbulkupdatestatusparams-callback)
   * [member.multiRemoveFromGroups([params], callback)](#emmamembermultiremovefromgroupsparams-callback)
   * [member.deleteAll([params], callback)](#emmamemberdeleteallparams-callback)
   * [member.withID(id).details([params], callback)](#emmamemberwithididdetailsparams-callback)
@@ -488,7 +488,7 @@ Delete an array of members. The members will be marked as deleted and cannot be 
   * `member_ids` <[Array]> An array of member ids to delete.
 * returns: `True` if all members are successfully deleted, otherwise `False`.
 
-#### emma.member.bulkUpdatingStatus([params], callback)
+#### emma.member.bulkUpdateStatus([params], callback)
 
 Change the status of an array of members. The members will have their member_status_id updated.
 
