@@ -18,15 +18,16 @@ You will need to generate your own API access tokens using the settings panel wi
 
 ## Supported Methods
 
+* [Automation](docs/automation.md)
 * [Fields](docs/fields.md)
-* [Groups](docs/groups).md
+* [Groups](docs/groups.md)
 * [Imports](docs/imports.md)
 * [Mailings](docs/mailings.md)
 * [Members](docs/members.md)
 * [Responses](docs/responses.md)
 * [Searches](docs/searches.md)
+* [Signup Forms](docs/signupforms.md)
 * [Webhooks](docs/webhooks.md)
-* [Automation](docs/automation.md)
 
 ## To Do
 
