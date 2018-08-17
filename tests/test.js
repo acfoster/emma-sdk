@@ -1,3 +1,4 @@
+require('dotenv').config({ path: '../.env' });
 var expect = require('chai').expect;
 
 var Emma = require('../lib/emma.js');
@@ -7,9 +8,9 @@ var emma;
 describe('Instantiating an Emma client', function () {
   it('should be successful', function () {
     emma = new Emma({
-      publicKey: "bc4d4a8a30a2e339a735",
-      privateKey: "dc91f5b20042fe5e7e34",
-      accountID: 1741758
+      publicKey: process.env.EMMA_PUBLIC_KEY,
+      privateKey: process.env.EMMA_PRIVATE_KEY,
+      accountID: process.env.EMMA_ACCOUNT_ID
     });
   });
 });
