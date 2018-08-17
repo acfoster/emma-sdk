@@ -12,7 +12,7 @@
     "url": "git://github.com/nathanpeck/emma-sdk.git"
   },
   "dependencies": {
-    "request": "2.44.0"
+    "request": "^2.88.0"
   },
   "devDependencies": {
     "chai": "1.9.1",
