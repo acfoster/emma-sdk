@@ -1,4 +1,5 @@
-require('dotenv').config({ path: '../.env' });
+const dotenv = require('dotenv');
+dotenv.config();
 var expect = require('chai').expect;
 
 var Emma = require('../lib/emma.js');
@@ -15,7 +16,7 @@ describe('Instantiating an Emma client', function () {
   });
 });
 
-describe.skip('Fields', function () {
+describe('Fields', function () {
   it('should list fields', function (done) {
     emma.field.list(function (err, response) {
       expect(err).to.equal(null);
